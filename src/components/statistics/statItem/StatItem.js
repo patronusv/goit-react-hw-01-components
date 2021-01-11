@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Li from './styledStatItem';
 const StatItem = ({ label, percentage }) => {
   return (
-    <li className="item">
+    <Li className="item">
       <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
-    </li>
+      <span className="percentage">{percentage}%</span>
+    </Li>
   );
 };
 

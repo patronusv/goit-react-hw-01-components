@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 const Wrapper = styled.div`
+  padding: 30px 0;
   .profile {
     overflow: hidden;
     width: 300px;
