@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import randomRGB from '../../../utils/randomRGB.js';
 const Li = styled.li`
-  background-color: teal;
   padding: 5px;
   width: calc(100% / 5);
   background-color: ${randomRGB};
