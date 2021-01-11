@@ -5,7 +5,6 @@ const Statistic = ({ stats, title = '' }) => {
   return (
     <section className="statistics">
       {title !== '' ? <h2 className="title">Upload stats</h2> : null}
-      {/* <h2 className="title">Upload stats</h2> */}
       {stats.map(stat => (
         <StatItem {...stat} key={stat.id} />
       ))}
@@ -16,6 +15,6 @@ const Statistic = ({ stats, title = '' }) => {
 
 export default Statistic;
 Statistic.propTypes = {
-  stats: PropTypes.array,
+  stats: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
 };
